@@ -89,6 +89,85 @@ body {
   color: #2563eb;
 }
 
+
+/* Skills Chart Styles */
+        .skills-chart-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 32px 20px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 18px rgba(30, 41, 59, 0.10);
+        }
+        .skills-bar {
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+        }
+        .skills-label {
+            font-weight: 600;
+            color: #2563eb;
+            margin-bottom: 4px;
+            margin-right: 14px;
+            display: flex;
+            align-items: center;
+            min-width: 110px;
+        }
+        .skills-logo {
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .skills-bar-bg {
+            flex: 1;
+            background: #dbeafe;
+            border-radius: 12px;
+            height: 32px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(30,41,59,0.08);
+        }
+        .skills-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #2563eb 80%, #38bdf8 100%);
+            border-radius: 12px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: right;
+            color: #fff;
+            font-weight: 700;
+            line-height: 32px;
+            padding-right: 12px;
+            transition: width 1.3s cubic-bezier(.48,.25,.52,.99);
+        }
+        @media (max-width: 650px) {
+            .skills-chart-container {
+                padding: 16px 5px;
+            }
+            .skills-bar-bg {
+                height: 22px;
+            }
+            .skills-bar-fill {
+                font-size: 0.97em;
+                padding-right: 6px;
+            }
+            .skills-label {
+                min-width: 70px;
+                font-size: 0.97em;
+            }
+            .skills-logo {
+                width: 18px;
+                height: 18px;
+                margin-right: 5px;
+            }
+        }
+
+
+
+
 /* Responsive nav */
 @media (max-width: 650px) {
   .nav-container {
