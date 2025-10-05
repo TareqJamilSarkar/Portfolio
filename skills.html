@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Tareq Jamil Sarkar's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .skills-chart-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 32px 20px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 18px rgba(30, 41, 59, 0.10);
+        }
+        .skills-bar {
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+        }
+        .skills-label {
+            font-weight: 600;
+            color: #2563eb;
+            margin-bottom: 4px;
+            margin-right: 14px;
+            display: flex;
+            align-items: center;
+            min-width: 110px;
+        }
+        .skills-logo {
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .skills-bar-bg {
+            flex: 1;
+            background: #dbeafe;
+            border-radius: 12px;
+            height: 32px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(30,41,59,0.08);
+        }
+        .skills-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #2563eb 80%, #38bdf8 100%);
+            border-radius: 12px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: right;
+            color: #fff;
+            font-weight: 700;
+            line-height: 32px;
+            padding-right: 12px;
+            transition: width 1.3s cubic-bezier(.48,.25,.52,.99);
+        }
+        @media (max-width: 650px) {
+            .skills-chart-container {
+                padding: 16px 5px;
+            }
+            .skills-bar-bg {
+                height: 22px;
+            }
+            .skills-bar-fill {
+                font-size: 0.97em;
+                padding-right: 6px;
+            }
+            .skills-label {
+                min-width: 70px;
+                font-size: 0.97em;
+            }
+            .skills-logo {
+                width: 18px;
+                height: 18px;
+                margin-right: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="aesthetic-cursor"></div>
+    <nav class="navbar fade-in">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Md Tareq Jamil Sarkar</a>
+            <ul class="nav-links">
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="skills.html" class="nav-link active">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="fade-in">
+        <div class="container">
+            <div class="profile-pic-section">
+                <img id="profile-pic" src="Image/tareq.png" alt="Profile Picture" class="profile-pic" />
+            </div>
+            <h1>MD TAREQ JAMIL SARKAR</h1>
+            <p>Web Developer / Data Analyst</p>
+        </div>
+    </header>
+    <main>
+        <section class="skills slide-in visible">
+            <div class="container">
+                <h2>Programming Languages & Skills</h2>
+                <div class="skills-chart-container">
+                    <div class="skills-bar">
+                        <span class="skills-label">
+                            <img class="skills-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo">Python
+                        </span>
+                        <div class="skills-bar-bg">
+                            <div class="skills-bar-fill" style="width: 100%;">100%</div>
+                        </div>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-label">
+                            <img class="skills-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Logo">HTML
+                        </span>
+                        <div class="skills-bar-bg">
+                            <div class="skills-bar-fill" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-label">
+                            <img class="skills-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Logo">CSS
+                        </span>
+                        <div class="skills-bar-bg">
+                            <div class="skills-bar-fill" style="width: 87%;">87%</div>
+                        </div>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-label">
+                            <img class="skills-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo">JavaScript
+                        </span>
+                        <div class="skills-bar-bg">
+                            <div class="skills-bar-fill" style="width: 83%;">83%</div>
+                        </div>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-label">
+                            <img class="skills-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R Logo">R
+                        </span>
+                        <div class="skills-bar-bg">
+                            <div class="skills-bar-fill" style="width: 85%;">85%</div>
+                        </div>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-label">
+                            <img class="skills-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ Logo">C++
+                        </span>
+                        <div class="skills-bar-bg">
+                            <div class="skills-bar-fill" style="width: 79%;">89%</div>
+                        </div>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-label">
+                            <img class="skills-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP Logo">PHP
+                        </span>
+                        <div class="skills-bar-bg">
+                            <div class="skills-bar-fill" style="width: 81%;">91%</div>
+                        </div>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-label">
+                            <img class="skills-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL Logo">SQL (Oracle)
+                        </span>
+                        <div class="skills-bar-bg">
+                            <div class="skills-bar-fill" style="width: 78%;">88%</div>
+                        </div>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-label">
+                            <img class="skills-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Excel Logo">Excel
+                        </span>
+                        <div class="skills-bar-bg">
+                            <div class="skills-bar-fill" style="width: 75%;">95%</div>
+                        </div>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-label">
+                            <img class="skills-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="PowerPoint Logo">PowerPoint
+                        </span>
+                        <div class="skills-bar-bg">
+                            <div class="skills-bar-fill" style="width: 73%;">93%</div>
+                        </div>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-label">
+                            <img class="skills-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Word Logo">Word
+                        </span>
+                        <div class="skills-bar-bg">
+                            <div class="skills-bar-fill" style="width: 70%;">95%</div>
+                        </div>
+                    </div>
+                </div>
+                <section class="skills slide-in visible">
+            <div class="container">
+                <h2>Professional & Technical Skills</h2>
+                <div class="skills-chart-container">
+               
+                    <li>Machine Learning: KNN, Neural Networks</li>
+                    <li>Data Analysis: Pandas, NumPy, Matplotlib</li>
+                    <li>Network Security: Basic knowledge of network security principles</li>
+                    <li>System Protection: Understanding of system protection mechanisms</li>
+                    <li>Web Development: HTML, CSS, JavaScript, PHP</li>
+                    <li>Database Management: SQL (Oracle)</li>
+                    <li>Adaptability: Quick learner, able to adapt to new technologies</li>
+                    <li>Research Skills: Strong research skills for problem-solving and innovation</li>
+                    <li>Critical Thinking: Ability to analyze complex problems and develop effective solutions</li>
+                    <li>Creativity: Innovative approach to software development and data analysis</li>
+                    <li>Ethical Hacking: Basic understanding of ethical hacking principles</li>
+                    <li>Data Mining: Experience in extracting valuable insights from data</li>
+                    <li>Data Analysis: Proficient in analyzing and interpreting data</li>
+                    <li>Data Visualization: Skills in creating visual representations of data</li>
+                    <li>Machine Learning: Familiar with machine learning algorithms and techniques</li>
+                    <li>Data Warehousing: Familiar with data warehousing concepts and tools</li>
+                    <li>Data Governance: Understanding of data governance principles</li>
+                    <li>Data Ethics: Awareness of ethical considerations in data handling</li>
+                    <li>Data Quality: Skills in ensuring data quality and integrity</li>
+                    <li>Data Integration: Experience in integrating data from multiple sources</li>
+                    <li>Data Modeling: Familiar with data modeling techniques</li>
+                    <li>Data Warehousing: Understanding of data warehousing concepts</li>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="fade-in">
+        <div class="container">
+            <p>&copy; 2025 Md Tareq Jamil Sarkar</p>
+        </div>
+    </footer>
+    <script>
+        // Animate bars on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelectorAll('.skills-bar-fill').forEach(function(bar) {
+                    var width = bar.style.width;
+                    bar.style.width = '0';
+                    setTimeout(function() {
+                        bar.style.width = width;
+                    }, 200);
+                });
+            }, 200);
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
